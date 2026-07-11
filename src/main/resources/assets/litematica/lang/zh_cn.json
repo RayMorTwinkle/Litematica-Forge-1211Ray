@@ -674,6 +674,7 @@
     "litematica.gui.label.area_selection.mode.normal": "标准模式",
     "litematica.gui.label.area_selection.mode.simple": "简易模式",
     "litematica.gui.label.area_selection_box_count": "选区数量：%d",
+    "litematica.gui.label.ghost_block_alpha": "幽灵方块透明度",
     "litematica.gui.label.area_selection_manager.current_selection": "当前选区：%s",
     "litematica.gui.label.area_selection_origin": "原点：%s",
     "litematica.gui.label.block_info.state_client": "客户端世界方块状态",

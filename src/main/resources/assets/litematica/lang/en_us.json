@@ -674,6 +674,7 @@
     "litematica.gui.label.area_selection.mode.normal": "Normal",
     "litematica.gui.label.area_selection.mode.simple": "Simple",
     "litematica.gui.label.area_selection_box_count": "Boxes: %d",
+    "litematica.gui.label.ghost_block_alpha": "Ghost Block Alpha",
     "litematica.gui.label.area_selection_manager.current_selection": "Selected area: %s",
     "litematica.gui.label.area_selection_origin": "Origin: %s",
     "litematica.gui.label.block_info.state_client": "Client World Block State",

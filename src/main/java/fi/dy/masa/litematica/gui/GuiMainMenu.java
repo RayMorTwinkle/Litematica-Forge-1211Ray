@@ -8,10 +8,12 @@ import fi.dy.masa.litematica.config.Configs;
 import fi.dy.masa.litematica.data.DataManager;
 import fi.dy.masa.litematica.selection.SelectionMode;
 import fi.dy.masa.litematica.tool.ToolMode;
+import fi.dy.masa.malilib.config.gui.SliderCallbackDouble;
 import fi.dy.masa.malilib.gui.GuiBase;
 import fi.dy.masa.malilib.gui.button.ButtonBase;
 import fi.dy.masa.malilib.gui.button.ButtonGeneric;
 import fi.dy.masa.malilib.gui.button.IButtonActionListener;
+import fi.dy.masa.malilib.gui.widgets.WidgetSlider;
 import fi.dy.masa.malilib.util.StringUtils;
 
 public class GuiMainMenu extends GuiBase
@@ -48,6 +50,16 @@ public class GuiMainMenu extends GuiBase
         String label = StringUtils.translate("litematica.gui.button.area_selection_mode", mode.getDisplayName());
         ButtonGeneric button = new ButtonGeneric(x, y, width, 20, label);
         this.addButton(button, new ButtonListenerCycleAreaMode(this));
+
+        // === 幽灵方块透明度滑动条 ===
+        y += 28;
+        String alphaLabel = StringUtils.translate("litematica.gui.label.ghost_block_alpha");
+        this.addLabel(x, y, width, 12, 0xFFAAAAAA, alphaLabel);
+        y += 14;
+        SliderCallbackDouble alphaCallback = new SliderCallbackDouble(
+            Configs.Visuals.GHOST_BLOCK_ALPHA, null);
+        WidgetSlider alphaSlider = new WidgetSlider(x, y, width, 20, alphaCallback);
+        this.addWidget(alphaSlider);
 
         label = StringUtils.translate("litematica.gui.button.tool_mode", DataManager.getToolMode().getName());
         int width2 = this.getStringWidth(label) + 10;
