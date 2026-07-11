@@ -6,7 +6,7 @@ license = "LGPLv3"
 modId = "forgematica"
 version = "${version}"
 displayName = "Forgematica"
-displayURL="https://github.com/ThinkingStudios/Litematica-Forge" #optional
+displayURL="https://github.com/RayMorTwinkle/Litematica-Forge-1211Ray" #optional
 logoFile="icon.png" #optional
 credits="masa" #optional
 authors="TexTrue, ThinkingStudio" #optional
@@ -14,6 +14,8 @@ description = '''
 Litematica unofficial (Neo)Forge port.
 
 A modern schematic mod for (Neo)Forge.
+
+为RayMor的fork版本。
 '''
 
 [[mixins]]

@@ -5,7 +5,7 @@ plugins {
 }
 
 base.archivesName = libs.versions.archives.name
-version = "${libs.versions.version.get()}-mc${libs.versions.minecraft.version.get()}"
+version = "${libs.versions.version.get()}-mc${libs.versions.minecraft.version.get()}-rayfork"
 group = libs.versions.maven.group
 
 repositories {
